@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication5.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+       <table style="height:400px;width:400px;">
+       <tr>
+          <td>
+              <asp:Label ID="lblHeader" runat="server" Text="Header"></asp:Label>
+&nbsp;</td>
+       </tr>
+        <tr>
+          <td>
+              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+              </asp:ContentPlaceHolder>
+              <asp:Button ID="btnSearch" runat="server" Text="Search" />
+             </td>
+       </tr>
+        <tr>
+          <td>
+            Footer
+             </td>
+       </tr>
+       </table>
+    </div>
+    </form>
+</body>
+</html>
